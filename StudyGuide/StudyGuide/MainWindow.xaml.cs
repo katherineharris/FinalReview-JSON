@@ -70,6 +70,27 @@ namespace StudyGuide
                     }
                     lstHighest.Items.Add(name);
 
+                    foreach(var m in movies)
+                    {
+                        var gs = m.genres.Split('|');
+                        foreach(var g in gs)
+                        {
+                            g.Trim();
+                            if (!lstGenres.Items.Contains(g))
+                            {
+                                lstGenres.Items.Add(g);
+                            }
+                        }
+                    }
+                    int rtotal = 0;
+                    foreach(var m in movies)
+                    {
+                        if (m.actor_1_name == "Robert Downey Jr.")
+                        {
+                            rtotal++;
+                        }
+                    }
+                    lstRDJ.Items.Add(rtotal);
                 }
             }
         }

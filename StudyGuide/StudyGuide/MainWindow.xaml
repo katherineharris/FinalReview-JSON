@@ -21,7 +21,8 @@
         <ListBox x:Name="lstGenres_Copy2" HorizontalAlignment="Left" Height="120" Margin="242,62,0,0" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="lblhighest" Content="Highest IMDB Score:" HorizontalAlignment="Left" Margin="427,31,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstHighest" HorizontalAlignment="Left" Height="120" Margin="427,62,0,0" VerticalAlignment="Top" Width="169"/>
-        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="462,258,0,0" VerticalAlignment="Top" Width="101" Height="48"/>
+        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="651,97,0,0" VerticalAlignment="Top" Width="101" Height="48" Click="btnCalculate_Click"/>
+        <Label x:Name="lblIMDB" Content="IMDB" HorizontalAlignment="Left" Margin="442,240,0,0" VerticalAlignment="Top" Height="91" Width="130" FontSize="48"/>
 
     </Grid>
 </Window>

@@ -47,8 +47,8 @@ namespace StudyGuide
                         }
                        
                     }
-                    int total = 0;
 
+                    int total = 0;
                     foreach(var m in movies)
                     {
                         if(m.director_name=="Anthony Russo")
@@ -58,10 +58,17 @@ namespace StudyGuide
                     }
                     lstRusso.Items.Add(total);
 
+                    double score = 0.0;
+                    string name = "";
                     foreach(var m in movies)
                     {
-
+                        if (m.imdb_score > score)
+                        {
+                            score = m.imdb_score;
+                            name = m.movie_title;
+                        }
                     }
+                    lstHighest.Items.Add(name);
 
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -31,10 +32,36 @@ namespace StudyGuide
             using(HttpClient client = new HttpClient())
             {
                 var response = client.GetAsync($"http://pcbstuou.w27.wh-2.com/webservices/3033/api/Movies?number=100").Result;
-                var content = response.Content.ReadAsStringAsync().Result;
+                //var content = response.Content.ReadAsStringAsync().Result;
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var movies = JsonConvert.DeserializeObject<List<IMDB>>(content);
+
+                    foreach(var m in movies)
+                    {
+                        if (m.num_voted_users > 350000)
+                        {
+                            lst350000.Items.Add(m.movie_title);
+                        }
+                       
+                    }
+                    int total = 0;
+
+                    foreach(var m in movies)
+                    {
+                        if(m.director_name=="Anthony Russo")
+                        {
+                            total++;
+                        }
+                    }
+                    lstRusso.Items.Add(total);
+
+                    foreach(var m in movies)
+                    {
+
+                    }
 
                 }
             }

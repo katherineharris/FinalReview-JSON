@@ -14,11 +14,11 @@
         <Label x:Name="lblGenre" Content="Movie Genres:" HorizontalAlignment="Left" Margin="51,30,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstGenres" HorizontalAlignment="Left" Height="120" Margin="51,61,0,0" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="lbl350000" Content="Votes users &gt; 350000:" HorizontalAlignment="Left" Margin="51,193,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstGenres_Copy" HorizontalAlignment="Left" Height="120" Margin="51,224,0,0" VerticalAlignment="Top" Width="169"/>
+        <ListBox x:Name="lst350000" HorizontalAlignment="Left" Height="120" Margin="51,224,0,0" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="lblRusso" Content="Anthony Russo Director:" HorizontalAlignment="Left" Margin="242,193,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstGenres_Copy1" HorizontalAlignment="Left" Height="120" Margin="242,224,0,0" VerticalAlignment="Top" Width="169"/>
+        <ListBox x:Name="lstRusso" HorizontalAlignment="Left" Height="120" Margin="242,224,0,0" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="lblRDJ" Content="Robert Downey Jr. Actor:" HorizontalAlignment="Left" Margin="242,31,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstGenres_Copy2" HorizontalAlignment="Left" Height="120" Margin="242,62,0,0" VerticalAlignment="Top" Width="169"/>
+        <ListBox x:Name="lstRDJ" HorizontalAlignment="Left" Height="120" Margin="242,62,0,0" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="lblhighest" Content="Highest IMDB Score:" HorizontalAlignment="Left" Margin="427,31,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstHighest" HorizontalAlignment="Left" Height="120" Margin="427,62,0,0" VerticalAlignment="Top" Width="169"/>
         <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="651,97,0,0" VerticalAlignment="Top" Width="101" Height="48" Click="btnCalculate_Click"/>
